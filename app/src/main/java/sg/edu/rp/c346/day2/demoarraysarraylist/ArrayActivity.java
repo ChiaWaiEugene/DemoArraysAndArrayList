@@ -17,8 +17,23 @@ public class ArrayActivity extends AppCompatActivity {
         tv = findViewById(R.id.textView1);
 
         //continue view the code in the worksheet
+        String [] array = new String [3];
 
+        array[0] = "Apple";
+        array[1] = "Banana";
+        array[2] = "Cherry";
 
+        System.out.println("Size is : " + array.length);
+
+        String msg = "Fruits\n";
+        msg += "=====\n";
+        for (int i = 0; i < array.length; i ++){
+            msg += array[i] + "\n";
+        }
+
+        System.out.println(msg);
+
+        tv.setText(msg);
 
     }
 }
